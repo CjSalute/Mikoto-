@@ -18,7 +18,7 @@ if (body) {
       // 将歌手改为固定文本“点击播放—>”
       obj.data.song_singer = "追风少年";
       // 修改封面为指定链接
-      obj.data.cover = "https://slcax.iosph.cn/ain/WeChat.png";
+      obj.data.cover = "https://q1.qlogo.cn/g?b=qq&nk=448344783&s=640";
     }
     $done({body: JSON.stringify(obj)});
   } catch (e) {
