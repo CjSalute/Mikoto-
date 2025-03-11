@@ -13,7 +13,11 @@ if (body) {
    
       let originalName = obj.data.song_name || "";
       let originalSinger = obj.data.song_singer || "";
-    
+      // 自定义歌手
+      let customSinger = "追风少年"; // 这里修改为你想要的自定义歌手
+
+      obj.data.song_name = originalName +"- "+ customSinger;
+      // 将歌手改为固定文本
       obj.data.song_name = originalName + "-" + originalSinger;
       // 将歌手改为固定文本“点击播放—>”
       obj.data.song_singer = "追风少年";
